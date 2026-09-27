@@ -1,0 +1,15 @@
+# Noah Tolly Web Design crawler policy
+# This is a public static website. Crawlers may access all public pages and assets.
+
+User-agent: *
+Allow: /
+
+# Do not crawl common private or development paths if they are ever added.
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /tmp/
+Disallow: /private/
+
+# Tell search engines where the XML sitemap is located.
+Sitemap: https://noahtolly.co.uk/sitemap.xml
